@@ -20,79 +20,597 @@
 
 </head>
 <body class="fixed-nav sticky-footer bg-dark">
-<a class="navbar-brand" href="index.html"> شروع بوت استرپ</a>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html"> شروع بوت استرپ</a>
 
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="index.html">
-                <i class="fa fa-fw fa-dashboard"></i>
-                <span class="nav-link-text">داشبورد</span>
-            </a>
-        </li>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">داشبورد</span>
+                </a>
+            </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="charts.html">
-                <i class="fa fa-fw fa-area-chart"></i>
-                <span class="nav-link-text"> نمودار ها</span>
-            </a>
-        </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="charts.html">
+                    <i class="fa fa-fw fa-area-chart"></i>
+                    <span class="nav-link-text"> نمودار ها</span>
+                </a>
+            </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-            <a class="nav-link" href="tables.html">
-                <i class="fa fa-fw fa-table"></i>
-                <span class="nav-link-text">جداول</span>
-            </a>
-        </li>
-
-
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
-               data-parent="#exampleAccordion">
-                <i class="fa fa-fw fa-wrench"></i>
-                <span class="nav-link-text">اجزا</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseComponents">
-                <li>
-                    <a href="navbar.html">نوار جهت</a>
-                </li>
-                <li>
-                    <a href="cards.html">کارت ها</a>
-                </li>
-            </ul>
-        </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="tables.html">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">جداول</span>
+                </a>
+            </li>
 
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-                <i class="fa fa-fw fa-file"></i>
-                <span class="nav-link-text">برگه های نمونه</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-                <li>
-                    <a href="login.html">برگه ورود </a>
-                </li>
-                <li>
-                    <a href="register.html"> برگه ثبت نام</a>
-                </li>
-                <li>
-                    <a href="forgot-password.html">برگه فراموشی رمز </a>
-                </li>
-                <li>
-                    <a href="blank.html"> برگه خالی</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-wrench"></i>
+                    <span class="nav-link-text">اجزا</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseComponents">
+                    <li>
+                        <a href="navbar.html">نوار جهت</a>
+                    </li>
+                    <li>
+                        <a href="cards.html">کارت ها</a>
+                    </li>
+                </ul>
+            </li>
 
-</div>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-file"></i>
+                    <span class="nav-link-text">برگه های نمونه</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                    <li>
+                        <a href="login.html">برگه ورود</a>
+                    </li>
+                    <li>
+                        <a href="register.html">برگه ثبت نام</a>
+                    </li>
+                    <li>
+                        <a href="forgot-password.html">برکه فراموشی رمز</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">برکه خالی</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-sitemap"></i>
+                    <span class="nav-link-text">سطوح منو </span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseMulti">
+                    <li>
+                        <a href="#"> آیتم سطح دو</a>
+                    </li>
+                    <li>
+                        <a href="#"> آیتم سطح دو</a>
+                    </li>
+                    <li>
+                        <a href="#"> آیتم سطح دو</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2"> سطح
+                            سوم</a>
+                        <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                            <li>
+                                <a href="#"> آیتم سطح سه</a>
+                            </li>
+                            <li>
+                                <a href="#"> آیتم سطح سه</a>
+                            </li>
+                            <li>
+                                <a href="#"> آیتم سطح سه</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fa-link"></i>
+                    <span class="nav-link-text">لینک</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <span class="d-lg-none">پیام
+              <span class="badge badge-pill badge-primary">جدید 12</span>
+            </span>
+                    <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">پیام های جدید</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>علی علوی</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">سلام قرارمون یادت نره!</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>میثم هاشمی</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">میخوام بدونم چی میخوای بدونی؟</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>فاطمه فاطمی</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">سلام میگما نمیگم چرا من درست نمیتونم تایپ کنم.</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item small" href="#">نمایش همه پیام ها</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-fw fa-bell"></i>
+                    <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">۶ جدید</span>
+            </span>
+                    <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">هشدار های جدید:</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>به روزرسانی وضعیت</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">این پیام به صورت خودکار ارسال شده است. لطفاً به آن پاسخ
+                            ندهید.
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>اعلام وضعیت</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">این یک پیام خودکار است. تمام سیستم ها آنلاین هستند.</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>اعلام وضعیت</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">این یک پیام خودکار است. تمام سیستم ها آنلاین هستند.</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item small" href="#">نمایش همه هشدارها</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="جستجو...">
+                        <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+                    </div>
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-fw fa-sign-out"></i>خروج</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
 <div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">داشبورد</a>
+            </li>
+            <li class="breadcrumb-item active">داشبورد من</li>
+        </ol>
+        <!-- Icon Cards-->
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-primary o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw fa-comments"></i>
+                        </div>
+                        <div class="mr-5">26 پیام جدید</div>
+                    </div>
+                    <a class="card-footer text-white clearfix small z-1" href="#">
+                        <span class="float-left">نمایش جزییات</span>
+                        <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-warning o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw fa-list"></i>
+                        </div>
+                        <div class="mr-5">11 کار جدید</div>
+                    </div>
+                    <a class="card-footer text-white clearfix small z-1" href="#">
+                        <span class="float-left">نمایش جزییات</span>
+                        <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-success o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw fa-shopping-cart"></i>
+                        </div>
+                        <div class="mr-5">123 سفارش جدید</div>
+                    </div>
+                    <a class="card-footer text-white clearfix small z-1" href="#">
+                        <span class="float-left">نمایش جزییات</span>
+                        <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-danger o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw fa-support"></i>
+                        </div>
+                        <div class="mr-5">13 تیکت جدید</div>
+                    </div>
+                    <a class="card-footer text-white clearfix small z-1" href="#">
+                        <span class="float-left">نمایش جزییات</span>
+                        <span class="float-right">
+                             <i class="fa fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Area Chart Example-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-area-chart"></i> ناحیه نمودار نمونه</div>
+            <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="30"></canvas>
+            </div>
+            <div class="card-footer small text-muted">به روز شده در تاریخ ۲۲/۱/۹۶ ساعت ۱۴</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Example Bar Chart Card-->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-bar-chart"></i> نمونه نمودار میله ای</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8 my-auto">
+                                <canvas id="myBarChart" width="100" height="50"></canvas>
+                            </div>
+                            <div class="col-sm-4 text-center my-auto">
+                                <div class="h4 mb-0 text-primary">۱۰۰۰۰۰ تومان</div>
+                                <div class="small text-muted"> در آمد</div>
+                                <hr>
+                                <div class="h4 mb-0 text-warning">۳۰۰۰۰ تومان</div>
+                                <div class="small text-muted">هزینه داخلی</div>
+                                <hr>
+                                <div class="h4 mb-0 text-success">۷۰۰۰۰ تومان</div>
+                                <div class="small text-muted">در گردش</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer small text-muted">دیروز ساعت ۱۱:۵۰ به روز شده</div>
+                </div>
+                <!-- Card Columns Example Social Feed-->
+                <div class="mb-0 mt-4">
+                    <i class="fa fa-newspaper-o"></i> خبرخوان</div>
+                <hr class="mt-2">
+                <div class="card-columns">
+                    <!-- Example Social Card-->
+                    <div class="card mb-3">
+                        <a href="#">
+                            <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=610" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1"><a href="#">داود ملایری</a></h6>
+                            <p class="card-text small">این موجا خیلی خوبن امروز
+                                <a href="#">#surfsup</a>
+                            </p>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body py-2 small">
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-thumbs-up"></i>پسندیدن</a>
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-comment"></i>نظر دادن</a>
+                            <a class="d-inline-block" href="#">
+                                <i class="fa fa-fw fa-share"></i>اشتراک گزاری</a>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body small bg-faded">
+                            <div class="media">
+                                <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-0 mb-1"><a href="#">آرش بهمنی</a></h6>خیلی خوبه، کاش منم اونجا بودم
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">پسندیدن</a>
+                                        </li>
+                                        <li class="list-inline-item">·</li>
+                                        <li class="list-inline-item">
+                                            <a href="#">پاسخ دادن</a>
+                                        </li>
+                                    </ul>
+                                    <div class="media mt-3">
+                                        <a class="d-flex pr-3" href="#">
+                                            <img src="http://placehold.it/45x45" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h6 class="mt-0 mb-1"><a href="#">داوود ملایی</a></h6>دفعه بعد حتماً
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">پسندیدن</a>
+                                                </li>
+                                                <li class="list-inline-item">·</li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">پاسخ دادن</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer small text-muted">پست شده در ۳۲ دقیقه پیش</div>
+                    </div>
+                    <!-- Example Social Card-->
+                    <div class="card mb-3">
+                        <a href="#">
+                            <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=180" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1"><a href="#">اسماعیل جهرمی</a></h6>
+                            <p class="card-text small">یک روز دیگه تو دفتر کار...
+                                <a href="#">#workinghardorhardlyworking</a>
+                            </p>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body py-2 small">
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-thumbs-up"></i>پسندیدم</a>
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-comment"></i>نظر دادن</a>
+                            <a class="d-inline-block" href="#">
+                                <i class="fa fa-fw fa-share"></i>اشتراک گزاری</a>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body small bg-faded">
+                            <div class="media">
+                                <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-0 mb-1"><a href="#">فرشته حسینی</a></h6>این دوربین رو از کجا خریدی؟ منم میخوام
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">پسندیدم</a>
+                                        </li>
+                                        <li class="list-inline-item">·</li>
+                                        <li class="list-inline-item">
+                                            <a href="#">پاسخ دادن</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer small text-muted">پست شده در ۴۰ دقیقه پیش</div>
+                    </div>
+                    <!-- Example Social Card-->
+                    <div class="card mb-3">
+                        <a href="#">
+                            <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=281" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1"><a href="#">جعفر ولایتی</a></h6>
+                            <p class="card-text small">یک عکس خوب از پارک شهر
+                                <a href="#">#kickflip</a>
+                                <a href="#">#holdmybeer</a>
+                                <a href="#">#igotthis</a>
+                            </p>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body py-2 small">
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-thumbs-up"></i>پسندیدم</a>
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-comment"></i>نظر دادن</a>
+                            <a class="d-inline-block" href="#">
+                                <i class="fa fa-fw fa-share"></i>اشتراک گذاری</a>
+                        </div>
+                        <div class="card-footer small text-muted">پست شده در یک ساعت پیش</div>
+                    </div>
+                    <!-- Example Social Card-->
+                    <div class="card mb-3">
+                        <a href="#">
+                            <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=185" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1"><a href="#">داود ملایری</a></h6>
+                            <p class="card-text small">گرم، شاید گم شدم
+                                <a href="#">#بیابان</a>
+                                <a href="#">#آب</a>
+                                <a href="#">#هیشکی-یکم-آب-نداره</a>
+                                <a href="#">#واقعاً؟</a>
+                                <a href="#">#تشنه</a>
+                                <a href="#">#وابشت</a>
+                            </p>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body py-2 small">
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-thumbs-up"></i>پسندیدم</a>
+                            <a class="mr-3 d-inline-block" href="#">
+                                <i class="fa fa-fw fa-comment"></i>نظر دادن</a>
+                            <a class="d-inline-block" href="#">
+                                <i class="fa fa-fw fa-share"></i>اشترک گزاری</a>
+                        </div>
+                        <hr class="my-0">
+                        <div class="card-body small bg-faded">
+                            <div class="media">
+                                <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-0 mb-1"><a href="#">اسماعیل جهرمی</a></h6>۲ کیلومتر دیگه میرسیم به سورمق یا فقط به نظرم اومده؟
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">پسندیدم</a>
+                                        </li>
+                                        <li class="list-inline-item">·</li>
+                                        <li class="list-inline-item">
+                                            <a href="#">پاسخ</a>
+                                        </li>
+                                    </ul>
+                                    <div class="media mt-3">
+                                        <a class="d-flex pr-3" href="#">
+                                            <img src="http://placehold.it/45x45" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h6 class="mt-0 mb-1"><a href="#">داوود ملایی</a></h6>
+                                            <img class="img-fluid w-100 mb-1" src="https://unsplash.it/700/450?image=789" alt="">نجات پیدا کردم. یک کاکتوس پیدا کردم. چجوری باز کنم این حالا؟
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">پسندیدم</a>
+                                                </li>
+                                                <li class="list-inline-item">·</li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">پاسخ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer small text-muted">پست شده در دیروز</div>
+                    </div>
+                </div>
+                <!-- /Card Columns-->
+            </div>
+            <div class="col-lg-4">
+                <!-- Example Pie Chart Card-->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-pie-chart"></i> نمودار دایره ای نمونه</div>
+                    <div class="card-body">
+                        <canvas id="myPieChart" width="100%" height="100"></canvas>
+                    </div>
+                    <div class="card-footer small text-muted">دیروز ۱۱:۵۳ به روز شده</div>
+                </div>
+                <!-- Example Notifications Card-->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-bell-o"></i>خبرخوان نمونه</div>
+                    <div class="list-group list-group-flush small">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="media">
+                                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <strong>داوود ملایری</strong>یک مقاله جدید پست کرده
+                                    <strong>سایت داوود ملایری</strong>.
+                                    <div class="text-muted smaller"> امروز در ۵:۳۴ - ۵ دقیقه پیش</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="media">
+                                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <strong>سمانه سلطانی</strong>یک پیام برای شما ارسال کرده است.
+                                    <div class="text-muted smaller">امروز ۴:۳۸</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="media">
+                                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <strong>جعفر ولایتی</strong>یک عکس به آلبوم اضافه کرد.
+                                    <strong>ساحل</strong>.
+                                    <div class="text-muted smaller">امروز ۴:۳۱ - یک ساعت پیش</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="media">
+                                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                                <div class="media-body">
+                                    <i class="fa fa-code-fork"></i>
+                                    <strong>مونیکا مردانی</strong>مخزن
+                                    <strong>startbootstrap-sb-admin</strong>را کپی کرد از روی
+                                    <strong>GitHub</strong>.
+                                    <div class="text-muted smaller">امروز ۳:۵۴ - دوساعت پیش</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">نمایش همه فعالیت ها...</a>
+                    </div>
+                    <div class="card-footer small text-muted">به روز شده در ۱۱:۵۹ عصر - دیروز</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
