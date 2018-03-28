@@ -59,10 +59,11 @@ body.fixed-nav {
     cursor: pointer; }
   #mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
     float: right;
+    float: left;
     content: '\f107';
     font-family: 'FontAwesome'; }
   #mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse.collapsed:after {
-    content: '\f105'; }
+    content: '\f104'; }
   #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level,
   #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level {
     padding-left: 0; }
