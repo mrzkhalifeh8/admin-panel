@@ -24,7 +24,7 @@ body.fixed-nav {
 
 .scroll-to-top {
   position: fixed;
-  right: 15px;
+  left: 15px;
   bottom: 3px;
   display: none;
   width: 50px;
