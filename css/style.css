@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'GanjNamehSans-Regular';
+    src: url("../fonts/GanjNamehSans-Regular.otf");
+    src: url("../fonts/GanjNamehSans-Regular.otf?#iefix") format('embedded-opentype'),
+    url("../fonts/GanjNamehSans-Regular.woff") format('woff'),
+    url("../fonts/GanjNamehSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    text-align: right;
+    font-family: GanjNamehSans-Regular;
+}
+ul{
+
+    padding-right: 0px;
+}
