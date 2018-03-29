@@ -85,9 +85,9 @@ body.fixed-nav {
     position: relative;
     min-width: 45px; }
     #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
-      float: right;
+      float: left;
       width: auto;
-      content: '\f105';
+      content: '\f104';
       border: none;
       font-family: 'FontAwesome'; }
     #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .indicator {
