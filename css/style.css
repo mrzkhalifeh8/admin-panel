@@ -15,3 +15,6 @@ ul{
 
     padding-right: 0px;
 }
+.modal-header .close{
+    margin: -15px auto -15px -15px;
+}
