@@ -93,7 +93,7 @@ body.fixed-nav {
     #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .indicator {
       position: absolute;
       top: 5px;
-      left: 21px;
+      right: 21px;
       font-size: 10px; }
   #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown.show > .nav-link:after {
     content: '\f107'; }
