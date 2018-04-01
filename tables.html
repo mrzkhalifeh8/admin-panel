@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> قالب نمونه پنل مدیریت</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-rtl.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html"> شروع بوت استرپ</a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">داشبورد</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text"> نمودار ها</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="tables.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">جداول</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+             data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">اجزا</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="navbar.html">نوار جهت</a>
+            </li>
+            <li>
+              <a href="cards.html">کارت ها</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+             data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">برگه های نمونه</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="login.html">برگه ورود</a>
+            </li>
+            <li>
+              <a href="register.html">برگه ثبت نام</a>
+            </li>
+            <li>
+              <a href="forgot-password.html">برکه فراموشی رمز</a>
+            </li>
+            <li>
+              <a href="blank.html">برکه خالی</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+             data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">سطوح منو </span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#"> آیتم سطح دو</a>
+            </li>
+            <li>
+              <a href="#"> آیتم سطح دو</a>
+            </li>
+            <li>
+              <a href="#"> آیتم سطح دو</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2"> سطح
+                سوم</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#"> آیتم سطح سه</a>
+                </li>
+                <li>
+                  <a href="#"> آیتم سطح سه</a>
+                </li>
+                <li>
+                  <a href="#"> آیتم سطح سه</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">لینک</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ml-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="d-lg-none">پیام
+              <span class="badge badge-pill badge-primary">جدید 12</span>
+            </span>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">پیام های جدید</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>علی علوی</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">سلام قرارمون یادت نره!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>میثم هاشمی</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">میخوام بدونم چی میخوای بدونی؟</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>فاطمه فاطمی</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">سلام میگما نمیگم چرا من درست نمیتونم تایپ کنم.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">نمایش همه پیام ها</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">۶ جدید</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">هشدار های جدید:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>به روزرسانی وضعیت</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">این پیام به صورت خودکار ارسال شده است. لطفاً به آن پاسخ
+                ندهید.
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>اعلام وضعیت</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">این یک پیام خودکار است. تمام سیستم ها آنلاین هستند.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>اعلام وضعیت</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">این یک پیام خودکار است. تمام سیستم ها آنلاین هستند.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">نمایش همه هشدارها</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="جستجو...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>خروج</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">داشبورد</a>
+        </li>
+        <li class="breadcrumb-item active">داشبورد من</li>
+      </ol>
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> جدول داده نمونه</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+              <tr>
+                <th>نام</th>
+                <th>موقعیت</th>
+                <th>دفتر</th>
+                <th>سن</th>
+                <th>تاریخ شروع همکاری</th>
+                <th>حقوق</th>
+              </tr>
+              </thead>
+              <tfoot>
+              <tr>
+                <th>نام</th>
+                <th>موقعیت</th>
+                <th>دفتر</th>
+                <th>سن</th>
+                <th>تاریخ شروع همکاری</th>
+                <th>حقوق</th>
+              </tr>
+              </tfoot>
+              <tbody>
+              <tr>
+                <td>مجید نیکویی</td>
+                <td>معمار سیستم</td>
+                <td>اردبیل</td>
+                <td>۶۱</td>
+                <td>۱۳۸۸/۰۱/۰۱</td>
+                <td>۱۲۳۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>غلامعلی نعمت الهی</td>
+                <td>حسابدار</td>
+                <td>تاکستان</td>
+                <td>۶۳</td>
+                <td>۱۳۸۰/۰۲/۱۴</td>
+                <td>۱۷۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>آتنا مومنی</td>
+                <td>نویسنده ارشد</td>
+                <td>ارومیه</td>
+                <td>۶۶</td>
+                <td>۱۳۸۹/۰۱/۱۲</td>
+                <td>۸۶۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>فردین رحیمی</td>
+                <td>کارآموز توسعه جاوا اسکریپت</td>
+                <td>ماهشهر</td>
+                <td>۲۲</td>
+                <td>۱۳۸۴/۰۳/۰۴</td>
+                <td>۴۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>علی مرادی</td>
+                <td>حسابدار</td>
+                <td>مرودشت</td>
+                <td>۳۳</td>
+                <td>۱۳۹۵/۰۵/۰۸</td>
+                <td>۱۶۷۲۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>بهاره شیرازی</td>
+                <td>کارشناس تولید محتوا</td>
+                <td>شیراز</td>
+                <td>۲۸</td>
+                <td>۱۳۸۸/۰۸/۰۸</td>
+                <td>۳۷۲۹۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>فرهاد صدیقی</td>
+                <td>دستیار فروش</td>
+                <td>اسفراین</td>
+                <td>۵۹</td>
+                <td>۱۳۸۸/۱۱/۱۱</td>
+                <td>۱۳۷۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>ریحانه مولایی</td>
+                <td>کارشناس تولید محتوا</td>
+                <td>کاشان</td>
+                <td>۵۵</td>
+                <td>۱۳۸۹/۰۹/۲۹</td>
+                <td>۳۲۷۹۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>کمال احتشام</td>
+                <td>توسعه دهنده جاوا اسکریپت</td>
+                <td>چابهار</td>
+                <td>۳۹</td>
+                <td>۱۳۹۶/۰۱/۳۱</td>
+                <td>۲۵۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سونیا فرجاد</td>
+                <td>مهندس نرم افزار</td>
+                <td>بروجن</td>
+                <td>۲۳</td>
+                <td>۱۳۸۹/۱۰/۱۵</td>
+                <td>۱۳۱۶۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>هادی حر</td>
+                <td>مدیر دفتر</td>
+                <td>اصفهان</td>
+                <td>۳۰</td>
+                <td>۱۳۹۵/۱۲/۱۹</td>
+                <td>۹۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>کرامت امجد</td>
+                <td>پشتیبانی</td>
+                <td>استهبان</td>
+                <td>۲۲</td>
+                <td>۱۳۹۳/۱۰/۱۷</td>
+                <td>۳۴۲۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>ماشالله سپهری</td>
+                <td>مدیر منطقه</td>
+                <td>آبادان</td>
+                <td>۳۶</td>
+                <td>۱۳۹۲/۱۲/۲۱</td>
+                <td>۶۰۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>هلنا صادقی</td>
+                <td>مدیر ارشد بازاریابی</td>
+                <td>لامرد</td>
+                <td>۴۳</td>
+                <td>۱۳۹۲/۱۱/۱۸</td>
+                <td>۳۱۳۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>فائزه توکلی</td>
+                <td>مدیر منطقه</td>
+                <td>کیش</td>
+                <td>۱۹</td>
+                <td>۱۳۹۶/۰۸/۱۸</td>
+                <td>۳۸۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>مجید فخار</td>
+                <td> مدیر بازاریابی</td>
+                <td>شهرکرد</td>
+                <td>۶۶</td>
+                <td>۱۳۹۲/۰۲/۲۲</td>
+                <td>۱۹۸۵۰۰۰ تومان </td>
+              </tr>
+              <tr>
+                <td>پدرام علیدادی</td>
+                <td>مدیر مالی</td>
+                <td>سلماس</td>
+                <td>۶۴</td>
+                <td>۱۳۹۰/۱۲/۲۱</td>
+                <td>۷۲۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>نیلوفر سقایی</td>
+                <td>مدیر سیستم</td>
+                <td>یزد</td>
+                <td>۲۶</td>
+                <td>۱۳۸۹/۰۷/۰۱</td>
+                <td> ۸۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>بدرالله فرامرزی</td>
+                <td>مهندس نرم افزار</td>
+                <td>پیران شهر</td>
+                <td>۴۱</td>
+                <td>۱۳۹۲/۰۲/۱۲</td>
+                <td>۱۳۲۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>نرگس بهرامی</td>
+                <td>مدیر برنامه ریزی</td>
+                <td>شهرضا</td>
+                <td>۳۵</td>
+                <td>۱۳۹۲/۰۹/۲۶</td>
+                <td>۲۱۷۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>حمیده دانشور</td>
+                <td>مدیر تحقیق توسعه</td>
+                <td>تهران</td>
+                <td>۳۰</td>
+                <td>۱۳۹۲/۱۱/۱۵</td>
+                <td>۳۴۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>محدثه پاکدل</td>
+                <td>مدیر بازاریابی دیجیتال</td>
+                <td>آران و بیدگل</td>
+                <td>۴۰</td>
+                <td>۱۳۸۹/۰۸/۲۸</td>
+                <td>۶۷۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سکینه عامری</td>
+                <td>پیش فروش</td>
+                <td>تهران</td>
+                <td>۲۱</td>
+                <td>۱۳۸۸/۱۰/۰۷</td>
+                <td>۱۶۴۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>درسا اقبال</td>
+                <td>دستیار فروش</td>
+                <td>ساری</td>
+                <td>۲۳</td>
+                <td>۱۳۸۹/۱۲/۱</td>
+                <td>۸۵۶۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>رامین مرندی</td>
+                <td>مدیر اجرایی</td>
+                <td>بابل</td>
+                <td>۴۷</td>
+                <td>۱۳۹۰/۱۱/۱۲</td>
+                <td>۱۲۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>مریم شاکری</td>
+                <td>توسعه دهنده</td>
+                <td>اردبیل</td>
+                <td>۴۲</td>
+                <td>۱۳۹۳/۰۲/۱۵</td>
+                <td>۹۲۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>نازنین خداوردی</td>
+                <td>مدیر منطقه</td>
+                <td>کرمانشاه</td>
+                <td>۲۸</td>
+                <td>۱۳۹۱/۰۱/۱۱</td>
+                <td>۳۵۸۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>محسن حدادی</td>
+                <td>مهندس نرم افزار</td>
+                <td>ماهدشت</td>
+                <td>۲۸</td>
+                <td>۱۳۹۳/۰۳/۳۰</td>
+                <td>۲۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>فریبا انتظامی</td>
+                <td>مدیر اجرایی</td>
+                <td>بوکان</td>
+                <td>۴۸</td>
+                <td>۱۳۸۷/۰۵/۱۴</td>
+                <td>۸۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>شرافت ناصری</td>
+                <td>بازاریابی محلی</td>
+                <td>مینودشت</td>
+                <td>۲۰</td>
+                <td>۱۳۸۴/۰۳/۰۶</td>
+                <td>۱۶۳۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سالار همتی</td>
+                <td>کارشناس ایمنی محیط کار</td>
+                <td>بیرجند</td>
+                <td>۳۷</td>
+                <td>۱۳۸۹/۰۳/۲۸</td>
+                <td>۹۵۴۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سمیرا شکوری</td>
+                <td>توسعه دهنده</td>
+                <td>دامغان</td>
+                <td>۵۳</td>
+                <td>۱۳۸۷/۰۹/۲۹</td>
+                <td>۱۱۴۵۰۰۰</td>
+              </tr>
+              <tr>
+                <td>پرستو لقمانی</td>
+                <td>کارشناس تولید محتوا</td>
+                <td>یاسوج</td>
+                <td>۲۷</td>
+                <td>۱۳۸۴/۰۴/۱۴</td>
+                <td>۱۴۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>گرشاسب صارمی</td>
+                <td>سرپرست تیم</td>
+                <td>ماهشهر</td>
+                <td>۲۲</td>
+                <td>۱۳۸۷/۱۱/۱۸</td>
+                <td>۲۳۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>مرتضی رضایی</td>
+                <td>خدمات پس از فروش</td>
+                <td>میناب</td>
+                <td>۴۹</td>
+                <td>۱۳۸۹/۰۶/۱۸</td>
+                <td>۳۲۴۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>یدالله شهریاری</td>
+                <td>طراح تبلیغات</td>
+                <td>درود</td>
+                <td>۴۷</td>
+                <td>۱۳۸۱/۰۹/۱۹</td>
+                <td>۸۵۷۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>حامد عزیزی</td>
+                <td>مدیر دفتر</td>
+                <td>ملایر</td>
+                <td>۵۱</td>
+                <td>۱۳۸۴/۰۹/۱۹</td>
+                <td>۱۶۴۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سحر اقتداری</td>
+                <td>منشی</td>
+                <td>هجدک</td>
+                <td>۴۱</td>
+                <td>۱۳۸۷/۰۷/۱۷</td>
+                <td>۱۹۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>وحید سعادت</td>
+                <td>مدیر مالی</td>
+                <td>ایذه</td>
+                <td>۶۲</td>
+                <td>۱۳۸۲/۰۱/۱۷</td>
+                <td>۴۵۲۵۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>طهمورث کیانی</td>
+                <td>مدیر دفتر</td>
+                <td>لاهیجان</td>
+                <td>۳۷</td>
+                <td>۱۳۸۵/۱۲/۱۱</td>
+                <td>۱۳۶۵۲۲۲ تومان</td>
+              </tr>
+              <tr>
+                <td>جانعلی نظامی</td>
+                <td>مدیر</td>
+                <td>لردگان</td>
+                <td>۶۵</td>
+                <td>۱۳۸۷/۰۳/۲۲</td>
+                <td>۶۴۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>سمانه میرزایی</td>
+                <td>مهندس پشتیبانی</td>
+                <td>میبد</td>
+                <td>۶۴</td>
+                <td>۱۳۸۹/۱۰/۱۵</td>
+                <td>۲۳۴۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>بابک خرمدره</td>
+                <td>مهندس نرم افزار</td>
+                <td>چابهار</td>
+                <td>۳۸</td>
+                <td>۱۳۹۴/۱۲/۰۳</td>
+                <td>۱۶۳۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>صفورا مستوفی</td>
+                <td>مهندس پشتیبانی</td>
+                <td>قصر شیرین</td>
+                <td>۳۷</td>
+                <td>۱۳۸۹/۰۸/۱۸</td>
+                <td>۱۳۹۵۷۵۰ تومان</td>
+              </tr>
+              <tr>
+                <td>ولی الله رجبی</td>
+                <td>توسعه دهنده</td>
+                <td>اسد آباد</td>
+                <td>۶۱</td>
+                <td>۱۳۸۶/۰۶/۱۶</td>
+                <td>۹۸۶۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>صمصام محمدی</td>
+                <td>مهندس پشتیبانی</td>
+                <td>نجف آباد</td>
+                <td>۴۷</td>
+                <td>۱۳۸۳/۰۴/۱۲</td>
+                <td>۸۷۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td> سعید مرادی</td>
+                <td>مهندس داده</td>
+                <td>جهرم</td>
+                <td>۶۴</td>
+                <td>۱۳۷۸/۰۷/۲۳</td>
+                <td>۱۳۸۵۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>فرانک قرمزی</td>
+                <td>مهندس نرم افزار</td>
+                <td>همدان</td>
+                <td>۶۳</td>
+                <td>۱۳۸۸/۰۵/۱۵</td>
+                <td>۱۲۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>آزیتا میری</td>
+                <td>مهندس نرم افزار</td>
+                <td>ساری</td>
+                <td>۵۶</td>
+                <td>۱۳۸۳/۰۲/۱۰</td>
+                <td>۱۱۵۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>جعفر ملاقلی</td>
+                <td>توسعه دهنده ارشد جاوا اسکریپت</td>
+                <td>شیراز</td>
+                <td>۴۳</td>
+                <td>۱۳۹۲/۰۳/۲۸</td>
+                <td>۸۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>مرتضی جلیلوند</td>
+                <td>دستیار فروش</td>
+                <td>کرمان</td>
+                <td>۴۵</td>
+                <td>۱۳۸۹/۱۰/۲۹</td>
+                <td>۵۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>حمیدرضا روزمند</td>
+                <td>مدیر منطقه</td>
+                <td>لندن</td>
+                <td>۴۷</td>
+                <td>۱۳۹۰/۰۹/۱۹</td>
+                <td>۱۵۰۰۰۰۰۰۰تومان</td>
+              </tr>
+              <tr>
+                <td>لیلا نعمت اللهی</td>
+                <td>مدیر سیستم</td>
+                <td>لندن</td>
+                <td>۲۱</td>
+                <td>۱۳۸۵/۰۳/۳۱</td>
+                <td>۱۰۰۰۰۰۰ تومان</td>
+              </tr>
+              <tr>
+                <td>جمیله قادری</td>
+                <td>توسعه دهنده</td>
+                <td>اصفهان</td>
+                <td>۳۰</td>
+                <td>۱۳۸۸/۰۵/۲۳</td>
+                <td>۸۵۰۰۰۰۰تومان</td>
+              </tr>
+              <tr>
+                <td>شادی زمانی</td>
+                <td>مدیر منطقه</td>
+                <td>فارس</td>
+                <td>۵۱</td>
+                <td>۱۳۸۶/۰۸/۱۲</td>
+                <td>۲۲۰۰۰۰۰۰تومان</td>
+              </tr>
+              <tr>
+                <td>میثم پیروزی</td>
+                <td>توسعه دهنده جاوا اسکریپت</td>
+                <td>سنگاپور</td>
+                <td>۲۹</td>
+                <td>۱۲۹۵/۱۲/۱۰</td>
+                <td>۱۰۰۰ دلار</td>
+              </tr>
+              <tr>
+                <td>دنیا رمضانی</td>
+                <td>پشتیبانی مشتریان</td>
+                <td>تهران</td>
+                <td>۲۷</td>
+                <td>۱۳۹۵/۱۱/۲۶</td>
+                <td>۱۲۰۰۰۰ تومان</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">دیروز ۱۱:۵۹ به روز شده</div>
+      </div>
+    </div>
+
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">قصد خروج دارید؟</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">اگر قصد خروج دارید،بر روی دکمه خروج کلیک کنید.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">انصراف</button>
+            <a class="btn btn-primary" href="login.html">خروج</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  </div>
+</body>
+
+</html>
