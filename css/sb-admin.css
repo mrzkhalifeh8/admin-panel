@@ -223,7 +223,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
 
 @media (min-width: 992px) {
   body.sidenav-toggled .content-wrapper {
-    margin-left: 55px; } }
+    margin-right: 55px; } }
 
 body.sidenav-toggled .navbar-sidenav {
   overflow-x: hidden;
